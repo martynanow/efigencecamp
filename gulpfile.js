@@ -1,25 +1,19 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var LessPluginCleanCSS = require('less-plugin-clean-css'),
-    LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-    cleancss = new LessPluginCleanCSS({ advanced: true }),
-    autoprefix= new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
 var path = require('path');
 
-gulp.task('less', function () {
-  return gulp.src('./less/**/*.less')
-  .pipe(less({
-    plugins: [autoprefix, cleancss]
-  }))
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.sass')
   .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write('./maps'))
   .pipe(gulp.dest('./public/css'))
 });
 
-gulp.watch('./less/**/*.less', ['less'])
+gulp.watch('./sass/**/*.sass', ['sass']);
 
-gulp.task('default', ['less'], function() {
+gulp.task('default', ['sass'], function() {
   // place code for your default task here
 });
 

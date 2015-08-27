@@ -67,6 +67,7 @@
     "grunt-simple-mocha": "~0.4.0",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
+    "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
     "istanbul": "~0.2.4",
     "less-plugin-autoprefix": "^1.4.2",
