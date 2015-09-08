@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Efigence project</title>
+        <meta name="description" content="Example project of application made by Martyna Nowocien at training organized by Efigence S.A.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="public/css/main.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/css/images/icomoon/style.css">
+        <script type="text/javascript" src="script/jQuery-1.11.3.js"></script>
+    </head>
+
+
+    <body>
+        <div class="wrapper">
+
+
+            <aside class="mobile-menu menu-inactive">
+                <a href="index.html">
+                    <span class="icon-location"></span>
+                    <span class="app-name"><strong>Hipster</strong>Trip</span>
+                </a>
+                <span class="icon-cancel-circle"></span>
+                <ul>
+                    <li><a class="mobile-text-top" href="index.html">Co to jest?</a></li>
+                    <li><a class="mobile-text-top" href="#">Aktualności</a></li>
+                    <li><a class="mobile-text-top" href="places.html">Miejscówki</a></li>
+                    <li><a class="mobile-text-top" href="#">Kontakt</a></li>
+                    <li><div></div></li>
+                    <li><a class="mobile-text-bott" href="#">Zarejestruj się</a></li>
+                    <li><a class="mobile-text-bott" href="#">Zaloguj się</a></li>
+                    <li><a class="mobile-text-bott" href="#">Dołącz przez FB</a></li>
+                </ul>
+            </aside> <!-- mobile-menu -->
+            <div class="head-menu-box">
+                <div class="header-box">
+                    <span class="icon-menu"></span>
+                    <ul class="header-box-list">
+                        <li>
+                            <a href="#">
+                                <span>Zarejestruj się</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-unlocked"></span>
+                                <span>Zaloguj się</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-facebook3"></span>
+                                <span>Dołącz przez FB</span>
+                            </a>
+                        </li>
+                    </ul> <!-- header-box-list -->
+                </div> <!-- header-box -->
+                <div class="menu-box row">
+                    <div class="menu-name-box col-lg-2">
+                        <a href="index.html">
+                            <span class="icon-location"></span>
+                            <span class="app-name"><strong>Hipster</strong>Trip</span>
+                            <span class="app-mobile-name"><strong>H</strong>T</span>
+                        </a>
+                    </div> <!-- menu-name-box col-lg-2 -->
+                    <div class="navigation-box col-lg-4 col-lg-offset-2">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <p>Co to jest?</p>
+                                    <div class="nav-line"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Aktualności</p>
+                                    <div class="nav-line"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="places.html">
+                                    <p>Miejscówki<p>
+                                    <div class="nav-line nav-line-active"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Kontakt</p>
+                                    <div class="nav-line"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- navigation-box col-lg-4 col-lg-offset-2 -->
+                    <div class="col-lg-2 col-lg-offset-2" id="input-box">
+                        <input class="menu-input" type="search" value="Szukaj..." />
+                        <span class="icon-search"></span>
+                    </div> <!-- input-box col-md-2 col-md-offset-2 -->
+                </div> <!-- menu-box row -->
+                <div class="mobile-input-box row">
+                    <input class="menu-input" type="search" value="Szukaj..." />
+                    <span class="icon-search"></span>
+                </div>
+            </div> <!-- head-menu-box -->
+
+
+            <div class="content-places-box row">
+            </div> <!-- content-movie-box row -->
+
+            <div class="c-table-box row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 col-sm-4">
+                    <h3>Miejscówki</h3>
+                </div> <!-- col-lg-3 -->
+                <div class="col-lg-4 col-sm-5 col-xs-7 table-head-box score-box">
+                    <div class="table-map-text">
+                        <p class="cell-text-sub">Wybierz:&nbsp;</p>
+                        <p class="cell-text-basic">na mapie</p>
+                    </div>
+                    <div class="table-sort-module">
+                        <p class="cell-text-sub cell-sort-text">Sortuj wg:&nbsp;</p>
+                        <div class="table-sort">
+                            <p class="cell-text-basic">Oceny: od najwyższej</p>
+                            <img src="public/css/images/background-img/arrow-down.png">
+                        </div>
+                        <div class="table-sort">
+                            <p class="cell-text-basic">Ceny: od najniższej</p>
+                            <img src="public/css/images/background-img/arrow-up.png">
+                        </div>
+                    </div>
+                </div> <!-- col-lg-4 -->
+                <div class="col-lg-4 col-sm-3 col-xs-5 table-head-box date-box">
+                    <div class="table-date-desc">
+                        <p class="cell-text-sub">Wybierz okres: Od&nbsp;</p>
+                    </div>
+                    <div class="date-pick">
+                        <div class="date-pickin">
+                            <p class="cell-text-basic">21 lipca 2015</p>
+                            <img src="public/css/images/background-img/calendar.png">
+                            <p class="cell-text-sub">do&nbsp;</p>
+                        </div>
+                        <div class="date-pickin">
+                            <p class="cell-text-basic">28 lipca 2015</p>
+                            <img src="public/css/images/background-img/calendar.png">
+                        </div>
+                    </div>
+                </div> <!-- col-lg-3 -->
+            </div> <!-- c-table-box -->
+
+            <div class="box-1"></div>
+
+            <div class="content-bottom-box row">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span class="icon-circle-left"></span>
+                                <p class="pagination-text">poprzednia strona</p>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <p class="pagination-text">następna strona</p>
+                                <span class="icon-circle-right"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- content-bottom-box row -->
+
+            <div class="footer-box">
+                <ul class="footer-left-list">
+                    <li><a href="#">Polityka Prywatności</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><a href="#">Polityka Cookies</a>&nbsp;&nbsp;&nbsp;</li>
+                    <li><span>Copyrights (c)2015 efigence S.A.</span></li>
+                </ul>
+                <ul class="footer-right-list">
+                    <li><span class="icon-facebook3"></span></li>
+                    <li><span class="icon-twitter3"></span></li>
+                </ul>
+            </div>
+
+        </div> <!-- wrapper -->
+
+
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/script2.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
