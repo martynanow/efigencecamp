@@ -1,0 +1,56 @@
+.content-bottom-box
+    height: 100px
+    background-color: $blue-average
+
+nav
+    .pagination
+        display: block
+        margin: 35px auto
+
+.pagination > li > a
+    &:first-child
+        background-color: $blue-average
+        border: none
+        color: $white
+        transition: background-color 0.2s linear
+        &:hover,
+        &:focus
+            background-color: $yellow-dark
+            color: $blue-average
+
+.pagination > li.active > a
+    background-color: $yellow-dark
+
+.pagination > li
+    &:first-child > a,
+    &:last-child > a
+        p,
+        span
+            transition: color 0.2s linear
+        &:hover,
+        &:focus
+            background-color: $blue-average
+            p,
+            span
+                color: $blue-dirty
+
+.pagination > li
+    &:nth-child(2) > a
+        margin-left: 54px
+
+.pagination > li
+    &:nth-child(11) > a
+        margin-right: 54px
+
+.icon-circle-left,
+.icon-circle-right
+    display: block
+    float: left
+    font-size: 20px
+    margin: 0 10px 0 10px
+
+.pagination-text
+    float: left
+    font-size: 13px
+    margin: 1px 0 0 0
+    text-decoration: underline

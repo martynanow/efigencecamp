@@ -9,3 +9,11 @@ $('.icon-menu').on('click', function() {
 $('.icon-cancel-circle').on('click', function() {
 	$('.mobile-menu').slideToggle(200).toggleClass('menu-inactive');
 });
+
+$('.btn-close').on('click', function() {
+	$('.popup-out').toggleClass('pop');
+});
+
+$('.text-layer').on('click', function() {
+	$('.popup-out').toggleClass('pop');
+});

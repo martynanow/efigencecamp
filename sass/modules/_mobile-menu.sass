@@ -1,0 +1,52 @@
+.icon-menu
+    font-size: 30px
+    position: relative
+    top: 22px
+    left: 3%
+
+.mobile-menu
+    position: absolute
+    top: 0
+    left: 0
+    width: 220px
+    height: 100%
+    z-index: 2000000
+    background-color: $blue-dark
+    padding-top: 10px
+    padding-left: 10px
+    .icon-cancel-circle
+        font-size: 18px
+        position: absolute
+        top: 22px
+        right: 10px
+        cursor: pointer
+        &:hover
+            color: $blue-dirty
+    ul
+        margin-top: 30px
+    li
+        display: block
+        margin-top: 10px
+        margin-left: 10px
+        div
+            background-color: $blue-dirty
+            width: 90%
+            height: 1px
+    a
+        font-size: 18px
+        &:hover,
+        &:focus
+            text-decoration: none
+
+.mobile-text-top
+    color: $white
+    &:hover
+        color: $yellow-light
+    
+.mobile-text-bott
+    color: $blue-dirty
+    &:hover
+        color: $yellow-dark
+
+.menu-inactive
+    display: none
